@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  
+  
+  <title>Média Semestral</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li> <a class="link" href="/media-semestral/index.html">Média Semestral</a></li>
+        <li> <a class="link" href="/verificador-idade.html">Verificador de Idade</a></li>
+        <li> <a class="link" href="#">Contador</a></li>
+        <li> <a class="link" href="#">Tabuada</a></li>
+        <li> <a class="link" href="#">Hora do Dia</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <div id="page">
+    <div id="text">
+      <div>
+        <h1>Média Semestral</h1>
+        <p>Insira suas notas no campo indicado até que todas se encontrem no quadro:</p>
+      </div>
+      <img src="../assets/images/Open Doodles Studying.png" alt="Open Doodle Studying">
+    </div>    
+    <section>
+      <div class="input-field">
+        <label class="label" for="input-nota">Nota:</label>
+        <form>
+          <input type="text" id="input-nota" required />
+          <button class="btn-small">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7.22223" y="1.52588e-05" width="2.77778" height="16.6667" rx="1.38889" fill=""/>
+              <rect y="9.44446" width="2.77778" height="16.6667" rx="1.38889" transform="rotate(-90 0 9.44446)" fill=""/>
+            </svg>                
+          </button>
+        </form>
+      </div>
+      <div class="quadro-notas">
+        <label class="label" for="">Quadro de notas:</label>
+        <select name="quadro-de-notas" id="quadro-de-notas" size="5"></select>
+      </div>
+      <div id="resultados">
+        <span class="label">Resultados: </span>
+        <ul>
+          <li id="maior-nota">Maior nota: </li>
+          <li id="menor-nota">Menor nota: </li>
+          <li id="media">Média: </li>
+        </ul>
+      </div>
+      <button id="calcular" disabled class="btn-large">Calcular</button>
+    </section>
+  </div>
+  </main>
+  <footer class="container">
+    <p>&copy Brenda Souza</p>
+  </footer>
+</body>
+<script src="../main.js"></script>
+<script src="script.js"></script>
+</html>
